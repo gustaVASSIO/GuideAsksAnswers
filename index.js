@@ -11,9 +11,5 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
-
 app.use('/',router);
-
-app.get('/',(req,res)=>{res.render('index')});
-
 app.listen(9090);

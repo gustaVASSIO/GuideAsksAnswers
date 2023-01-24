@@ -1,6 +1,18 @@
-<%- include("templates/header.ejs") %> 
-<div class="container" id="main-container">
-    <h3>Make your question</h3>
-    <form action=""></form>
+<%- include("templates/header.ejs") %>
+<div class="container-fluid" id="main-container">
+  <div class="col-md-12">
+    <div class="col-md-6 offset-md-3">
+        <h3 id="title-form">Make your question</h3>
+      <form action="/ask" method="post">
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input class="form-control" type="text" id="title" name="title" placeholder="Insert your ask title" required/>
+            <label for="description">Description:</label>
+            <textarea name="description" class="form-control" id="description" cols="30" rows="5" placeholder="Describe your ask" required></textarea>
+        </div>
+        <button class="btn" id="btn-submit">Make Question</button>
+      </form>
+    </div>
+  </div>
 </div>
-<%- include("templates/footer.ejs") %> 
+<%- include("templates/footer.ejs") %>

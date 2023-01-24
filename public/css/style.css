@@ -1,4 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 #main-container{
-    font-family: ;
+    margin-top: 5vh;
+}
+#btn-submit{
+    background-color: #39007D;
+    color: #fff;
+    transition: .5s;
+}
+#btn-submit:hover{
+    background-color: #7E1FFF;
+}
+#title-form{
+    text-align: center;
+    border-bottom: 4px solid #39007D;
+    padding-bottom: 4px;
+}
+.card-footer{
+    display: inline-flex;
+    justify-content: center;
+}
+
+.card-footer #btn-submit{
+width: 200px;
+}
+
+#main-title{
+    text-align: center;
+}
+
+#reply-container{
+    background-color: #be7abb;
+    color: #000;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 4px;
+    width: 620px;
+    height: 310px;
+}
+
+.subtitle{
+    border-right: 4px solid #39007D;
+    width: 105px;
+}
+.answer-container{
+    background-color: #cf9bcc;
+    padding: 10px 20px;
 }

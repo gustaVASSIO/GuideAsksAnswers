@@ -1,0 +1,39 @@
+<%- include("templates/header.ejs") %>
+<div class="container-fluid" id="main-container">
+  <div class="col-md-12">
+    <div class="col-md-6 offset-md-3">
+      <h3 id="title-form"><%= title %></h3>
+      <div class="card">
+        <div class="card-body"><%= description %></div>
+      </div>
+      <br />
+      <div id="reply-container">
+        <h4 id="main-title">Your answer:</h4>
+        <form action="/answer" method="post">
+          <input type="hidden" name="id_ask" value="<%= id_ask %>" />
+          <textarea
+            style="resize: none"
+            class="form-control"
+            name="body_answer"
+            id=""
+            cols="30"
+            rows="8"
+          ></textarea>
+          <button class="btn" id="btn-submit">Send Answer</button>
+        </form>
+      </div>
+      <br />
+      <h4 class="subtitle">Answers</h4>
+      <% answers.forEach(answer => { %>
+      <br />
+      <div class="card">
+        <div class="card-body answer-container">
+          <h3>#<%= answer.id %></h3>
+          <p><%= answer.answer %></p>
+        </div>
+      </div>
+      <% }) %>
+    </div>
+  </div>
+</div>
+<%- include("templates/footer.ejs") %>

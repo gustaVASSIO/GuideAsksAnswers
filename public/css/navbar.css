@@ -1,0 +1,20 @@
+#main-navbar{
+    background: linear-gradient(to left, #7E1FFF 0%, #39007D 100%);
+}
+#main-navbar a{
+    text-decoration: none;
+}
+#logo div{
+    display: inline-flex;
+}
+#logo div img{
+    width: 60px;
+}
+
+#logo-title{
+    margin-left: 3px;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}

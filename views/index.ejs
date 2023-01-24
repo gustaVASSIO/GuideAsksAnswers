@@ -1,5 +1,20 @@
-<%-include("templates/header.ejs") %> 
-<div class="container">
-    <h1>Home Page</h1>
+<%-include("templates/header.ejs") %>
+<div class="container" id="main-container">
+  <h3 id="title-form">Find answer for a problem, or make your question.</h3>
+  <br>
+  <a href="/ask" class="btn" id="btn-submit">Make a ask</a>
+  <br>
+  <br>
+  <% asks.forEach(({id,title,description}) => { %>
+  <div class="card">
+    <div class="card-body">
+        <h3><%= title %> </h3>
+    </div>
+    <div class="card-footer">
+        <a href="ask/<%= id %>" class="btn" id="btn-submit">Reply</a>
+    </div>
+  </div>
+  <br>
+  <% }) %>
 </div>
-<%-include("templates/footer.ejs") %> 
+<%-include("templates/footer.ejs") %>
