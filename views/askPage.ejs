@@ -24,14 +24,16 @@
       </div>
       <br />
       <h4 class="subtitle">Answers</h4>
+     <% i=1 %> 
       <% answers.forEach(answer => { %>
       <br />
       <div class="card">
         <div class="card-body answer-container">
-          <h3>#<%= answer.id %></h3>
+          <h3>#<%= i%></h3>
           <p><%= answer.answer %></p>
         </div>
       </div>
+      <% i++ %> 
       <% }) %>
     </div>
   </div>
